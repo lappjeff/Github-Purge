@@ -1,9 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
-export class AuthServiceService {
-
-  constructor() { }
+export class AuthService {
+  login(): any {
+    //send http request to log in
+  }
+  constructor() {}
 }
