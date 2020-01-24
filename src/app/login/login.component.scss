@@ -5,3 +5,12 @@
   width: 30%;
   height: 35vh;
 }
+
+.blur-container {
+  background-color: red;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 2;
+  left: 0%;
+  background: rgba(255, 255, 255, 0.1);
+}
