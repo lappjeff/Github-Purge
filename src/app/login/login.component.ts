@@ -6,13 +6,15 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./login.component.scss"]
 })
 export class LoginComponent implements OnInit {
-  isBlurred: boolean = false;
+  isBlurred: boolean;
 
-  toggleBlurred() {
+  toggleBlurred(): void {
     this.isBlurred = !this.isBlurred;
   }
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.isBlurred = false;
+  }
 }
