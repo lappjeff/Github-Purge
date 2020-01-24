@@ -2,7 +2,11 @@
   [ngClass]="{ 'blur-container': isBlurred }"
   class="blur-container position-fixed"
 >
-  <div class="border position-fixed login rounded p-2">
+  <div
+    class="border position-fixed login rounded p-2"
+    (mouseenter)="toggleBlurred()"
+    (mouseleave)="toggleBlurred()"
+  >
     <div class="row h-100">
       <div
         class="col justify-content-around d-flex flex-column align-items-center "
