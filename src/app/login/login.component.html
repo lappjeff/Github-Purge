@@ -1,4 +1,7 @@
-<div class="blur-container position-fixed">
+<div
+  [ngClass]="{ 'blur-container': isBlurred }"
+  class="blur-container position-fixed"
+>
   <div class="border position-fixed login rounded p-2">
     <div class="row h-100">
       <div
